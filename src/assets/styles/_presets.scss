@@ -1,0 +1,46 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.desktop-hidden {
+
+    @media(min-width: $desktop) {
+        display: none !important;
+    }
+}
+
+.mobile-hidden {
+
+    @media(max-width: 1023px) {
+        display: none !important;
+    }
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font: 400 14px $f-family-base;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0 0 16px;
+}

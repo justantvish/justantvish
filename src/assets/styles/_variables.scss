@@ -1,0 +1,31 @@
+// Colors
+$black: #2f2f2f;
+$white: #fff;
+$gray: #acacac;
+$gray-alt: #9b9b9b;
+$gray-darker:  #4a4a4a;
+$gray-dark: #838383;
+$gray-light: #f4f4f4;
+$purple: #514a9b;
+$purple-light: #746eaf;
+$purple-lighter: #b9b7d7;
+$pink-light: #d8d8d8;
+$blue-dark: #005b9a;
+$blue: #2586c9;
+$blue-light: #337caf;
+$navy: #213f99;
+$red: #b3002a;
+
+$main-color: $purple;
+$text-color: $black;
+$bg-color-main: $white;
+$bg-color-alt: $gray-alt;
+
+// Fonts
+$f-family-base: 'Roboto', sans-serif;
+$f-family-alt: 'Aleo', serif;
+
+// Breakpoints
+$tablet: 768px;
+$desktop: 1024px;
+$desktop-lg: 1200px;
