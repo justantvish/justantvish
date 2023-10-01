@@ -4,27 +4,6 @@
     box-sizing: border-box;
 }
 
-.desktop-hidden {
-
-    @media(min-width: $desktop) {
-        display: none !important;
-    }
-}
-
-.mobile-hidden {
-
-    @media(max-width: 1023px) {
-        display: none !important;
-    }
-}
-
-body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    font: 400 14px $f-family-base;
-}
-
 img {
     display: block;
     max-width: 100%;
@@ -43,4 +22,23 @@ ul {
 
 p {
     margin: 0 0 16px;
+}
+
+// Editable
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font: 400 18px $f-family-base;
+    background-color: $bg-color-main;
+    color: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $f-family-alt;
 }

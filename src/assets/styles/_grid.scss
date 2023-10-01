@@ -6,7 +6,7 @@ $col-sizes:
 ;
 
 @each $numerator, $denominator in $col-sizes {
-    .col-#{$numerator}-#{$denominator} {
+    [data-col_#{$numerator}-#{$denominator}] {
         max-width: calc((#{$numerator} / #{$denominator}) * 100%);
     }
 }
@@ -36,31 +36,10 @@ $col-sizes:
     }
 }
 
-// Project grid styles
-.wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.main {
-    width: 100%;
-    flex-grow: 1;
-}
-
-.header {
-    width: 100%;
-    flex-shrink: 1;
-}
-
-.footer {
-    flex-shrink: 1;
-}
-
 .container {
     padding: 0 15px;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1480px;
     margin: 0 auto;
 }
 

@@ -1,0 +1,11 @@
+.about {
+    
+    &-block {
+        display: flex;
+    }
+
+    &-text {
+        width: 50%;
+        padding-right: 50px;
+    }
+}
