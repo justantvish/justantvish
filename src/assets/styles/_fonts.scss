@@ -1,1 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Poppins:wght@300;400;700&family=Righteous&display=swap');
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?xe9foy');
+    src: url('../fonts/icomoon.eot?xe9foy#iefix') format('embedded-opentype'),
+         url('../fonts/icomoon.ttf?xe9foy') format('truetype'),
+         url('../fonts/icomoon.woff?xe9foy') format('woff'),
+         url('../fonts/icomoon.svg?xe9foy#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+  
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+  .icon-times:before {
+    content: "\e900";
+  }
+  .icon-check:before {
+    content: "\e901";
+  }
+  .icon-facebook:before {
+    content: "\e902";
+  }
+  .icon-github:before {
+    content: "\e903";
+  }
+  .icon-linkedin:before {
+    content: "\e904";
+  }
+  .icon-mail:before {
+    content: "\e905";
+  }
+  .icon-arrow-down:before {
+    content: "\ea3e";
+  }
+  

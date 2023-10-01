@@ -1,0 +1,13 @@
+.desktop-hidden {
+
+    @media(min-width: $desktop) {
+        display: none !important;
+    }
+}
+
+.mobile-hidden {
+
+    @media(max-width: 1023px) {
+        display: none !important;
+    }
+}
