@@ -111,6 +111,28 @@ html { scroll-behavior: smooth; }
 
 .skills-item { padding: 12px; text-align: center; white-space: nowrap; min-width: 25%; text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3); }
 
+.exp-tabs { display: flex; align-items: start; max-width: 980px; margin: 0 auto; }
+
+.exp-tabs_list { min-width: 240px; border-left: 3px solid rgba(255, 255, 255, 0.3); }
+
+.exp-btn { background-color: transparent; color: #c5cbd3; border: none; text-align: left; padding: 0; display: flex; align-items: center; position: relative; padding: 12px 16px; cursor: pointer; }
+
+.exp-btn:before { content: ''; position: absolute; top: 0; bottom: 0; left: -3px; width: 3px; background-color: cadetblue; opacity: 0; visibility: hidden; }
+
+.exp-btn.active { background-color: rgba(116, 115, 115, 0.1); }
+
+.exp-btn.active:before { opacity: 1; visibility: visible; }
+
+.exp-btn, .exp-btn:focus, .exp-btn:active { outline: none; cursor: pointer; }
+
+.exp-btn:hover { background-color: rgba(116, 115, 115, 0.1); }
+
+.exp-btn_date { color: #8f9596; font-size: 16px; margin-bottom: 8px; }
+
+.exp-btn_position { font-weight: bold; }
+
+.exp-wrapper { padding-left: 40px; }
+
 .footer { height: 100px; }
 
 .social-link { perspective: 1000px; display: inline-block; color: #c5cbd3; border-radius: 4px; }

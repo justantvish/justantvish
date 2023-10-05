@@ -34,11 +34,6 @@ if(nav) {
   setTimeout(() => nav.classList.add('initiated'), 200);
 }
 
-
-// skills.forEach((el, i) => {
-//   el.style.transform = `translateZ(-${Math.floor(Math.random() * 500)}px)`;
-// });
-
 const multiple = 100;
 const mouseOverContainer = document.getElementsByTagName("body")[0];
 const skillsContainer = document.querySelector(".skills-wrapper");
@@ -232,5 +227,4 @@ const initSkills = () => {
         skillsList[0].appendChild(skillsItem);
     });
 };
-
 initSkills();

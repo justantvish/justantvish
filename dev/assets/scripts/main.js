@@ -38,11 +38,6 @@ if (nav) {
     return nav.classList.add('initiated');
   }, 200);
 }
-
-// skills.forEach((el, i) => {
-//   el.style.transform = `translateZ(-${Math.floor(Math.random() * 500)}px)`;
-// });
-
 var multiple = 100;
 var mouseOverContainer = document.getElementsByTagName("body")[0];
 var skillsContainer = document.querySelector(".skills-wrapper");
