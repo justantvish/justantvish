@@ -1,9 +1,11 @@
 "use strict";
 
+// import { skills } from './data.js';
+
+// console.log(skills)
 var logo = document.querySelector('.logo');
 var slogan = document.querySelector('.hero-slogan');
 var greet = document.querySelector('.hero-text');
-var skillsEl = document.querySelectorAll('.skills-badge');
 var nav = document.querySelector('.nav-list');
 if (logo) {
   logo.innerHTML = logo.innerText.split('').map(function (letter, i) {
@@ -125,6 +127,12 @@ var skills = [{
   name: 'Yarn',
   stack: 'development_environment'
 }, {
+  name: 'Npm',
+  stack: 'development_environment'
+}, {
+  name: 'Firebase',
+  stack: 'development_environment'
+}, {
   name: 'Jira',
   stack: 'development_environment'
 }, {
@@ -149,6 +157,9 @@ var skills = [{
   name: 'Blender',
   stack: 'design_and_graphics'
 }, {
+  name: 'Photoshop',
+  stack: 'design_and_graphics'
+}, {
   name: 'Avocode',
   stack: 'design_and_graphics'
 }];
@@ -169,6 +180,7 @@ var initSkills = function initSkills() {
       var styles = e.currentTarget.style.transform;
       var sibArr = Array.from(siblings);
       sibArr.shift();
+      console.log(sibArr);
       sibArr.map(function (el) {
         if (el.classList.contains('current')) {
           el.classList.remove('current');
@@ -187,3 +199,30 @@ var initSkills = function initSkills() {
   });
 };
 initSkills();
+
+// Experience
+var expList = document.querySelector('.exp-tabs_list');
+var expContents = document.querySelectorAll('.exp-content');
+var expItems = document.querySelectorAll('.exp-btn');
+var expActive = document.querySelector('.exp-tabs_active');
+expItems.forEach(function (item) {
+  item.addEventListener('click', function (e) {
+    var siblings = e.currentTarget.parentNode.parentNode.childNodes;
+    var sibArr = Array.from(siblings);
+    var sibArrFiltered = sibArr.filter(function (el) {
+      return el.nodeName !== "#text";
+    });
+    sibArrFiltered.map(function (el) {
+      var expBtn = el.querySelector('.exp-btn');
+      if (expBtn.classList.contains('active')) {
+        expBtn.classList.remove('active');
+        expActive.style.top = "".concat(e.currentTarget.offsetTop, "px");
+      }
+    });
+    e.currentTarget.classList.add('active');
+    expContents.forEach(function (tab) {
+      tab.classList.remove('active');
+    });
+    document.getElementById(e.currentTarget.dataset.tab).classList.add('active');
+  });
+});

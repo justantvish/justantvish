@@ -1,9 +1,12 @@
 "use strict";
 
+// import { skills } from './data.js';
+
+// console.log(skills)
+
 const logo = document.querySelector('.logo');
 const slogan = document.querySelector('.hero-slogan');
 const greet = document.querySelector('.hero-text');
-const skillsEl = document.querySelectorAll('.skills-badge');
 const nav = document.querySelector('.nav-list');
 
 if(logo) {
@@ -150,6 +153,14 @@ const skills = [
         stack: 'development_environment',
     },
     {
+        name: 'Npm',
+        stack: 'development_environment',
+    },
+    {
+        name: 'Firebase',
+        stack: 'development_environment',
+    },
+    {
         name: 'Jira',
         stack: 'development_environment',
     },
@@ -161,7 +172,7 @@ const skills = [
         name: 'Agile',
         stack: 'development_environment',
     },
-    {
+    { 
         name: 'VSCode',
         stack: 'development_environment',
     },
@@ -179,6 +190,10 @@ const skills = [
     },
     {
         name: 'Blender',
+        stack: 'design_and_graphics',
+    },
+    {
+        name: 'Photoshop',
         stack: 'design_and_graphics',
     },
     {
@@ -209,6 +224,7 @@ const initSkills = () => {
             const styles = e.currentTarget.style.transform;
             const sibArr = Array.from(siblings);
             sibArr.shift();
+            console.log(sibArr)
             sibArr.map(el => {
                 if (el.classList.contains('current')) {
                     el.classList.remove('current');
@@ -228,3 +244,30 @@ const initSkills = () => {
     });
 };
 initSkills();
+
+
+// Experience
+const expList = document.querySelector('.exp-tabs_list');
+const expContents = document.querySelectorAll('.exp-content'); 
+const expItems = document.querySelectorAll('.exp-btn');
+const expActive = document.querySelector('.exp-tabs_active');
+
+expItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+        const siblings = e.currentTarget.parentNode.parentNode.childNodes;
+        const sibArr = Array.from(siblings);
+        const sibArrFiltered = sibArr.filter(el => el.nodeName !== "#text")
+        sibArrFiltered.map(el => {
+            const expBtn = el.querySelector('.exp-btn');
+            if (expBtn.classList.contains('active')) {
+                expBtn.classList.remove('active');
+                expActive.style.top = `${e.currentTarget.offsetTop}px`;
+            }
+        });
+        e.currentTarget.classList.add('active');
+        expContents.forEach(tab => {
+            tab.classList.remove('active');
+        });
+        document.getElementById(e.currentTarget.dataset.tab).classList.add('active');
+    })
+});
