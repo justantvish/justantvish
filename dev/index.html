@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JustAntVish</title>
     <link rel="stylesheet" href="./assets/styles/main.css">
-    <script src="./assets/scripts/main.js" defer></script>
+    <script src="./assets/scripts/main.js" type="module" defer></script>
 </head>
 <body>
     <div class="wrapper">
@@ -62,6 +62,7 @@
                 <section id="experience" class="section">
                     <h1>Experience</h1>
                     <div class="exp-tabs">
+                        <span class="exp-tabs_active"></span>
                         <ul class="exp-tabs_list">
                             <li class="exp-tabs_item">
                                 <button data-tab="portside" class="exp-btn active">
@@ -72,7 +73,7 @@
                                 </button>
                             </li>
                             <li class="exp-tabs_item">
-                                <button data-tab="portside" class="exp-btn">
+                                <button data-tab="easycode" class="exp-btn">
                                     <div>
                                         <div class="exp-btn_date">May 2019 - May 2022</div>
                                         <div class="exp-btn_position">Frontend Developer<span class="exp-btn_company"> &bull; Portside, inc.</span></div>
@@ -81,12 +82,12 @@
                             </li>
                         </ul>
                         <div class="exp-wrapper">
-                            <div class="exp-content" id="portside">
+                            <div class="exp-content active" id="portside">
                                 <div class="exp-header">
                                     <div class="exp-position">Frontend Developer</div>
                                     <div class="exp-company">Portside, Inc., Remote</div>
                                 </div>
-                                    <div class="exp-date">May 2019 - May 2022</div>
+                                <div class="exp-date">May 2019 - May 2022</div>
                                 <ul class="exp-actions">
                                     <li class="exp-actions_item">Developed responsive website (https://portside.co/) with HTML, CSS, JS</li>
                                     <li class="exp-actions_item">Developed Web application with React both for desktop and mobile </li>
@@ -94,13 +95,16 @@
                                 </ul>
                             </div>
                             <div class="exp-content" id="easycode">
-                                <div class="exp-position"><span class="exp-company"></span></div>
-                                <div class="exp-date"></div>
+                                <div class="exp-header">
+                                    <div class="exp-position">Frontend Developer</div>
+                                    <div class="exp-company">Portside, Inc., Remote</div>
+                                </div>
+                                <div class="exp-date">May 2019 - May 2022</div>
                                 <ul class="exp-actions">
                                     <li class="exp-actions_item"></li>
                                 </ul>
                             </div>
-                            <div class="exp-content" id="h yperion">
+                            <div class="exp-content" id="hyperion">
                                 <div class="exp-position"><span class="exp-company"></span></div>
                                 <div class="exp-date"></div>
                                 <ul class="exp-actions">

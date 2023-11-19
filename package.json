@@ -2,7 +2,7 @@
   "name": "digital-squared",
   "version": "1.0.0",
   "description": "Test",
-  "main": "index.js",
+  "main": "main.js",
   "repository": "localhost",
   "author": "Justantvish",
   "license": "MIT",
