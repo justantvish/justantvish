@@ -145,6 +145,10 @@ const skills = [
         stack: 'libraries_and_tools',
     },
     {
+        name: 'Leaflet',
+        stack: 'libraries_and_tools',
+    },
+    {
         name: 'Github',
         stack: 'development_environment',
     },
@@ -154,6 +158,10 @@ const skills = [
     },
     {
         name: 'Npm',
+        stack: 'development_environment',
+    },
+    {
+        name: 'Vite',
         stack: 'development_environment',
     },
     {
