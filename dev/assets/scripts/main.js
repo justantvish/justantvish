@@ -121,6 +121,9 @@ var skills = [{
   name: 'EJS',
   stack: 'libraries_and_tools'
 }, {
+  name: 'Leaflet',
+  stack: 'libraries_and_tools'
+}, {
   name: 'Github',
   stack: 'development_environment'
 }, {
@@ -128,6 +131,9 @@ var skills = [{
   stack: 'development_environment'
 }, {
   name: 'Npm',
+  stack: 'development_environment'
+}, {
+  name: 'Vite',
   stack: 'development_environment'
 }, {
   name: 'Firebase',
