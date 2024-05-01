@@ -1,30 +1,17 @@
 {
-  "name": "digital-squared",
-  "version": "1.0.0",
-  "description": "Test",
-  "main": "main.js",
-  "repository": "localhost",
-  "author": "Justantvish",
-  "license": "MIT",
+  "name": "justantvish",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "server": "live-server --watch=dev/ --open=dev/index.html",
-    "build-js": "babel src -d dev --watch",
-    "build-sass": "node-sass -rw src/assets/styles/main.scss dev/assets/styles/main.css --output-style compact",
-    "compress-images": "imagemin src/assets/images/* --plugin.jpegtran.progressive=true --out-dir=dev/assets/images",
-    "copy-fonts": "copyfiles -f -s src/assets/fonts/* dev/assets/fonts",
-    "dev": "npm-run-all --parallel compress-images copy-fonts build-sass build-js server"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "@babel/cli": "^7.22.5",
-    "@babel/core": "^7.22.5",
-    "@babel/preset-env": "^7.22.5",
-    "copy-and-watch": "^0.1.6",
-    "copyfiles": "^2.4.1",
-    "imagemin": "^8.0.1",
-    "imagemin-cli": "^7.0.0",
-    "live-server": "^1.2.2",
-    "node-sass": "^9.0.0",
-    "npm-run-all": "^4.1.5"
-  },
-  "dependencies": {}
+    "@sveltejs/vite-plugin-svelte": "^3.0.2",
+    "sass": "^1.71.1",
+    "svelte": "^4.2.11",
+    "vite": "^5.1.4"
+  }
 }

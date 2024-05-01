@@ -13,6 +13,7 @@ node_modules/
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+.vscode/*
 
 # yarn v2
 yarn.lock*
@@ -21,6 +22,9 @@ yarn.lock*
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# pnpm
+pnpm-lock.yaml
 
 # Git
 .git
