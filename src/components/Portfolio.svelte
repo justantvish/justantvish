@@ -1,9 +1,29 @@
 <script>
+  import { projects } from "../lib/data/projects";
 </script>
 
 <section id="portfolio" class="section">
   <h2>Projects</h2>
   <div class="projects">
+    {#each projects as project}
+      <div class="project-card_wrap">
+        <div class="project-card">
+          <div class="project-actions">
+            <a href={project.linkGit} class="project-link" target="_blank"
+              >Github</a
+            >
+            <a href={project.link} class="project-link" target="_blank">Web</a>
+          </div>
+          <h3 class="project-title">{project.name}</h3>
+          <p class="project-desc">{project.description}</p>
+          <ul class="project-stack">
+            {#each project.stack as item}
+              <li class="project-stack_item">{item}</li>
+            {/each}
+          </ul>
+        </div>
+      </div>
+    {/each}
     <div class="project-card_wrap">
       <div class="project-card">
         <div class="project-actions">
@@ -48,17 +68,24 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
     }
 
     &-link {
+      transition: color 0.3s;
+      text-shadow: 2px 2px 5px $text-color;
       color: $white;
       margin-left: 12px;
+
+      &:hover {
+        color: $text-color;
+      }
     }
 
     &-title {
       font-size: 23px;
-      margin: 0 0 24px;
+      color: $text-color;
+      margin: 0 0 18px;
     }
 
     &-desc {
@@ -67,13 +94,17 @@
 
     &-stack {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
-      margin: 0 -12px;
+      gap: 3px;
 
       &_item {
-        padding: 0 12px;
-        font-size: 14px;
-        color: $text-color-alt;
+        padding: 2px;
+        border-radius: 2px;
+        background-color: $bg-color-alt;
+        font-size: 12px;
+        line-height: 1;
+        color: $navy;
       }
     }
   }
