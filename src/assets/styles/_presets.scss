@@ -11,7 +11,13 @@ img {
 }
 
 a {
+    transition: color .3s;
     text-decoration: none;
+    color: $gray-blue;
+
+    &:hover {
+        color: darken($gray-blue, 15%);
+    }
 }
 
 ul {

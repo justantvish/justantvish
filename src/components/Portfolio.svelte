@@ -57,6 +57,7 @@
       padding: 12px;
       background-color: rgba(0, 0, 0, 0.3);
       border-radius: 10px;
+      height: 100%;
 
       &_wrap {
         padding: 16px;
@@ -95,11 +96,11 @@
     &-stack {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
+      align-items: stretch;
       gap: 3px;
 
       &_item {
-        padding: 2px;
+        padding: 3px;
         border-radius: 2px;
         background-color: $bg-color-alt;
         font-size: 12px;

@@ -29,7 +29,7 @@ export const experience = [
         position: 'Frontend Developer',
         date: '2019-05 - 2022-05',
         actions: [
-            'Developed responsive website (<a href="https://portside.co/">https://portside.co/</a>)',
+            'Developed responsive website (<a href="https://portside.co/" target="_blank">https://portside.co/</a>)',
             'Developed Web application with React both for desktop and mobile'
         ],
         stack: [

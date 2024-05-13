@@ -1,12 +1,6 @@
 <script>
   import { initiatedOnmount } from "../lib/utils/initiate-onmount";
   const text = "Justantvish";
-  const content = text
-    .split("")
-    .map(function (letter, i) {
-      return `<span style="transition-delay: ${i * 40}ms">${letter}</span>`;
-    })
-    .join("");
   let initiated = false;
   const handleInit = () => {
     initiated = true;
@@ -15,7 +9,9 @@
 </script>
 
 <strong class="logo" class:initiated>
-  {@html content}
+  {#each text as letter, i}
+    <span style="transition-delay: {i * 40}ms">{letter}</span>
+  {/each}
 </strong>
 
 <style lang="scss">
