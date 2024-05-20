@@ -1,5 +1,6 @@
 <script>
   import { skills, skillsStack } from "../lib/data/skills";
+  import inViewport from "../lib/actions/viewportAction";
 
   const handleCard = (e) => {
     const siblings = e.currentTarget.parentNode.childNodes;
@@ -16,7 +17,14 @@
   };
 </script>
 
-<div class="skills">
+<div
+  class="skills"
+  use:inViewport
+  on:enterViewport={(e) => {
+    e.target.style.transform = "translateX(0)";
+    e.target.style.opacity = "1";
+  }}
+>
   <div class="skills-wrapper">
     {#each skillsStack as el, i (i)}
       <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -51,6 +59,11 @@
     justify-content: space-around;
     position: relative;
     height: 500px;
+    transform: translateX(100%);
+    transition:
+      transform 0.8s,
+      opacity 0.3s;
+    opacity: 0;
 
     &:hover {
       &:after {

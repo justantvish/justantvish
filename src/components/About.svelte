@@ -1,10 +1,18 @@
 <script>
+  import inViewport from "../lib/actions/viewportAction";
   import Skills from "./Skills.svelte";
 </script>
 
 <section id="about" class="section about">
   <div class="about-block">
-    <div class="about-text">
+    <div
+      class="about-text"
+      use:inViewport
+      on:enterViewport={(e) => {
+        e.target.style.transform = "translateX(0)";
+        e.target.style.opacity = "1";
+      }}
+    >
       <h2>About me</h2>
       <p>
         With over 8 years of frontend development experience in a wide range of
@@ -38,6 +46,11 @@
     &-text {
       width: 50%;
       padding-right: 50px;
+      transform: translateX(-100%);
+      transition:
+        transform 0.8s,
+        opacity 0.3s;
+      opacity: 0;
     }
   }
 </style>
