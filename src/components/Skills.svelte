@@ -59,7 +59,7 @@
     justify-content: space-around;
     position: relative;
     height: 500px;
-    transform: translateX(100%);
+    transform: translateX(90%);
     transition:
       transform 0.8s,
       opacity 0.3s;

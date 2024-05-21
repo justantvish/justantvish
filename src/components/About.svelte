@@ -41,12 +41,13 @@
   .about {
     &-block {
       display: flex;
+      align-items: stretch;
     }
 
     &-text {
       width: 50%;
       padding-right: 50px;
-      transform: translateX(-100%);
+      transform: translateX(-99%);
       transition:
         transform 0.8s,
         opacity 0.3s;
