@@ -36,7 +36,7 @@
       top: 0;
       right: 0;
       bottom: 0;
-      /* background-image: url("/src/assets/img/Justantvish3.JPG"); */
+      background-image: url("/src/assets/img/Justantvish3.JPG");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;

@@ -1,43 +1,54 @@
 <script>
   import { projects } from "../lib/data/projects";
+  import inViewport from "../lib/actions/viewportAction";
 </script>
 
 <section id="portfolio" class="section">
-  <h2>Projects</h2>
-  <div class="projects">
-    {#each projects as project}
+  <div
+    class="projects_inner"
+    use:inViewport
+    on:enterViewport={(e) => {
+      e.target.style.transform = "translateX(0)";
+      e.target.style.opacity = "1";
+    }}
+  >
+    <h2>Projects</h2>
+    <div class="projects">
+      {#each projects as project}
+        <div class="project-card_wrap">
+          <div class="project-card">
+            <div class="project-actions">
+              <a href={project.linkGit} class="project-link" target="_blank"
+                >Github</a
+              >
+              <a href={project.link} class="project-link" target="_blank">Web</a
+              >
+            </div>
+            <h3 class="project-title">{project.name}</h3>
+            <p class="project-desc">{project.description}</p>
+            <ul class="project-stack">
+              {#each project.stack as item}
+                <li class="project-stack_item">{item}</li>
+              {/each}
+            </ul>
+          </div>
+        </div>
+      {/each}
       <div class="project-card_wrap">
         <div class="project-card">
           <div class="project-actions">
-            <a href={project.linkGit} class="project-link" target="_blank"
-              >Github</a
-            >
-            <a href={project.link} class="project-link" target="_blank">Web</a>
+            <a href="" class="project-link">Github</a>
+            <a href="" class="project-link">Web</a>
           </div>
-          <h3 class="project-title">{project.name}</h3>
-          <p class="project-desc">{project.description}</p>
+          <h3 class="project-title">Project</h3>
+          <p class="project-desc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+            placeat voluptate aperiam, illo quam architecto.
+          </p>
           <ul class="project-stack">
-            {#each project.stack as item}
-              <li class="project-stack_item">{item}</li>
-            {/each}
+            <li class="project-stack_item">React</li>
           </ul>
         </div>
-      </div>
-    {/each}
-    <div class="project-card_wrap">
-      <div class="project-card">
-        <div class="project-actions">
-          <a href="" class="project-link">Github</a>
-          <a href="" class="project-link">Web</a>
-        </div>
-        <h3 class="project-title">Project</h3>
-        <p class="project-desc">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-          placeat voluptate aperiam, illo quam architecto.
-        </p>
-        <ul class="project-stack">
-          <li class="project-stack_item">React</li>
-        </ul>
       </div>
     </div>
   </div>
@@ -50,6 +61,14 @@
     align-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
+
+    &_inner {
+      transform: translateX(-90%);
+      transition:
+        transform 0.8s,
+        opacity 0.3s;
+      opacity: 0;
+    }
   }
 
   .project {

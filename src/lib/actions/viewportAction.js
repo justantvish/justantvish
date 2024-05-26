@@ -10,11 +10,7 @@ function ensureIntersectionObserver() {
 				const eventName = entry.isIntersecting && 'enterViewport';
 				entry.target.dispatchEvent(new CustomEvent(eventName));
 			});
-		},
-        {
-            root: null,
-            threshold: [0.025]
-        }
+		}
 	);
 }
 

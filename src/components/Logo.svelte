@@ -1,6 +1,6 @@
 <script>
   import { initiatedOnmount } from "../lib/utils/initiate-onmount";
-  const text = "Justantvish";
+  const text = "JustAntvish";
   let initiated = false;
   const handleInit = () => {
     initiated = true;
