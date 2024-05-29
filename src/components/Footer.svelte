@@ -7,7 +7,7 @@
       <a
         href="https://github.com/justantvish"
         target="_blank"
-        class="social-link"
+        class="social-link git"
       >
         <div class="social-link_inner">
           <div class="social-icon">
@@ -21,7 +21,7 @@
       <a
         href="https://www.linkedin.com/in/justantvish/"
         target="_blank"
-        class="social-link"
+        class="social-link linkedin"
       >
         <div class="social-link_inner">
           <div class="social-icon">
@@ -40,9 +40,12 @@
   .footer {
     position: fixed;
     left: 0;
-    top: 80px;
-    width: 50px;
+    top: 0;
+    bottom: 0;
+    padding: 70px 5px 0;
+    width: 60px;
     z-index: 8;
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
   .social {
@@ -58,10 +61,10 @@
           transform 0.4s,
           0.5s width 0.2s;
         transform-style: preserve-3d;
-        width: 60px;
-        height: 60px;
-        min-width: 60px;
-        font-size: 32px;
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        font-size: 30px;
         border-radius: 4px;
         // border: 2px solid $gray-blue;
         background-color: $navy;
