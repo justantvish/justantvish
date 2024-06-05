@@ -20,7 +20,6 @@
     <li class="social-item">
       <a
         href="https://www.linkedin.com/in/justantvish/"
-        target="_blank"
         class="social-link linkedin"
       >
         <div class="social-link_inner">
@@ -28,6 +27,20 @@
             <i class="icon-linkedin"></i>
           </div>
           <div class="social-text">Linkedin</div>
+        </div>
+      </a>
+    </li>
+    <li class="social-item">
+      <a
+        href="mailto:justantvish@gmail.com"
+        class="social-link gmail"
+        target="_blank"
+      >
+        <div class="social-link_inner">
+          <div class="social-icon">
+            <i class="icon-mail"></i>
+          </div>
+          <div class="social-text">Gmail</div>
         </div>
       </a>
     </li>
@@ -55,6 +68,24 @@
       color: $white;
       border-radius: 4px;
 
+      &.git {
+        .social-text {
+          background-color: $git;
+        }
+      }
+
+      &.linkedin {
+        .social-text {
+          background-color: $linkedin;
+        }
+      }
+
+      &.gmail {
+        .social-text {
+          background-color: $gmail;
+        }
+      }
+
       &_inner {
         position: relative;
         transition:
@@ -66,8 +97,6 @@
         min-width: 50px;
         font-size: 30px;
         border-radius: 4px;
-        // border: 2px solid $gray-blue;
-        background-color: $navy;
         color: $gray-blue;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
