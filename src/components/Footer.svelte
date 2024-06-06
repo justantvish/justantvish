@@ -2,6 +2,14 @@
 </script>
 
 <footer class="footer">
+  <div class="footer-logo">
+    <img
+      src="/src/assets/img/logo.svg"
+      height="40"
+      width="40"
+      alt="justantvish"
+    />
+  </div>
   <ul class="social">
     <li class="social-item">
       <a
@@ -55,10 +63,17 @@
     left: 0;
     top: 0;
     bottom: 0;
-    padding: 70px 5px 0;
+    padding: 0px 5px 0;
     width: 60px;
     z-index: 8;
     background-color: rgba(0, 0, 0, 0.4);
+
+    &-logo {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   .social {

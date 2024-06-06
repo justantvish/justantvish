@@ -8,7 +8,7 @@ export const experience = [
             'Developing "swiss knife" application for managing daily routine'
         ],
         stack: [
-            'React', 'React Native', 'TS', 'Redux', 'SCSS', 'CSS Modules'
+            'React', 'React Native', 'TS', 'SCSS', 'CSS Modules', 'React Navigation'
         ]
     },
     {
@@ -42,7 +42,8 @@ export const experience = [
         position: 'Frontend Developer',
         date: '2018-10 - 2019-05',
         actions: [
-            
+            'Frontend on Wordpress based projects both for desktop and mobile',
+            'Mentoring junior Frontend Developer'
         ],
         stack: [
             'React', 'JS', 'HTML', 'CSS', 'SCSS', 'LESS', 'Git', 'Jira', 'Scrum', 'Mailjet'
@@ -54,7 +55,7 @@ export const experience = [
         position: 'HTML/CSS Lecturer',
         date: '2018-11 - 2019-09',
         actions: [
-            
+            'Successfully trained two groups with 15+ students'
         ]
     },
     {
@@ -63,10 +64,13 @@ export const experience = [
         position: 'Lead of Frontend Department',
         date: '2017-09 - 2018-10',
         actions: [
-            
+            'Succesfully built and led a team of 5 developers',
+            'Created personal development plans for developers', 
+            'created a development plan for the team',
+            'made connections with other departments'
         ],
         stack: [
-            'JS', 'HTML', 'CSS', 'SCSS', 'LESS', 'Jquery', 'Git', 'GitLab', 'Bitbucket', 'Scrum'
+            'JS', 'HTML', 'CSS', 'SCSS', 'LESS', 'Jquery', 'Git', 'GitLab', 'Bitbucket', 'Scrum', 'Avocode', 'Zeplin'
         ]
     },
     {
@@ -75,10 +79,10 @@ export const experience = [
         position: 'Frontend Developer',
         date: '2017-05 - 2018-10',
         actions: [
-            
+            'Developed and supported multiple responsive web products (SaaS, eshops, etc.)'
         ],
         stack: [
-            'JS', 'HTML', 'CSS', 'SCSS', 'LESS', 'Jquery', 'Git', 'GitLab', 'Bitbucket', 'Scrum'
+            'JS', 'HTML', 'CSS', 'SCSS', 'LESS', 'Jquery', 'Git', 'GitLab', 'Bitbucket', 'Scrum', 'Google Maps API', 'PWA', 'Avocode', 'Zeplin'
         ]
     },
     {
@@ -87,7 +91,7 @@ export const experience = [
         position: 'Frontend Developer',
         date: '2016-05 - 2017-04',
         actions: [
-            
+            'Provided 100+ high-quality web solutions in short terms'
         ],
         stack: [
             'JS', 'HTML', 'CSS', 'SCSS', 'LESS', 'Jquery', 'Scrum'

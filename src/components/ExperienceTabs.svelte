@@ -19,7 +19,7 @@
     <div class="exp-date">{exp.date}</div>
     <ul class="exp-actions">
       {#each exp.actions as action}
-        <li class="exp-actions_item">{@html action}</li>
+        <li class="exp-actions_item"><span>{@html action}</span></li>
       {/each}
     </ul>
   </div>
@@ -42,6 +42,45 @@
       &_company {
         color: $text-color;
         font-size: 13px;
+      }
+    }
+  }
+
+  .exp {
+    &-header {
+    }
+
+    &-position {
+    }
+
+    &-company {
+    }
+
+    &-date {
+    }
+    &-actions {
+      &_item {
+        display: flex;
+        position: relative;
+        padding-left: 16px;
+        font-size: 16px;
+        line-height: 1.2;
+
+        &:before {
+          content: "";
+          width: 9px;
+          height: 9px;
+          min-width: 9px;
+          border-radius: 50%;
+          background-color: $gray-blue;
+          position: absolute;
+          left: 0;
+          top: 5px;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
       }
     }
   }
