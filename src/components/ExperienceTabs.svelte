@@ -13,10 +13,12 @@
   </div>
   <div slot="tab-content" let:item={exp}>
     <div class="exp-header">
-      <div class="exp-position">{exp.position}</div>
-      <div class="exp-company">{exp.company}</div>
+      <div class="exp-header_left">
+        <div class="exp-position">{exp.position}</div>
+        <div class="exp-company">{exp.company}</div>
+      </div>
+      <div class="exp-date">{exp.date}</div>
     </div>
-    <div class="exp-date">{exp.date}</div>
     <ul class="exp-actions">
       {#each exp.actions as action}
         <li class="exp-actions_item"><span>{@html action}</span></li>
@@ -48,15 +50,33 @@
 
   .exp {
     &-header {
+      background-color: rgba(116, 115, 115, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+
+      &_left {
+        display: flex;
+        align-items: center;
+      }
     }
 
     &-position {
+      font-weight: bold;
     }
 
     &-company {
+      font-size: 16px;
+      color: $gray-blue;
     }
 
     &-date {
+      color: #8f9596;
+      margin-bottom: 16px;
+      font-size: 14px;
     }
     &-actions {
       &_item {
