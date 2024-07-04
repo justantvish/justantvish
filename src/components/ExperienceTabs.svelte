@@ -71,11 +71,22 @@
     &-company {
       font-size: 16px;
       color: $gray-blue;
+      display: flex;
+      align-items: center;
+
+      &:before {
+        content: "";
+        height: 5px;
+        width: 5px;
+        background-color: $gray-blue;
+        border-radius: 50%;
+        display: block;
+        margin: 0 6px;
+      }
     }
 
     &-date {
       color: #8f9596;
-      margin-bottom: 16px;
       font-size: 14px;
     }
     &-actions {
