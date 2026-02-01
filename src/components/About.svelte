@@ -15,7 +15,7 @@
     >
       <h2>About me</h2>
       <p>
-        With over 8 years of frontend development experience in a wide range of
+        With over 9 years of frontend development experience in a wide range of
         projects, I'm a self-taught, passionate expert in frontend technologies.
         From crafting B2B SaaS platforms to designing captivating landing pages,
         building multi-page websites, enhancing e-shops and many more, I've

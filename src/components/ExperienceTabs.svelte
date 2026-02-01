@@ -34,7 +34,7 @@
       &_date {
         color: #8f9596;
         font-size: 13px;
-        margin-bottom: 8px;
+        margin-block-end: 8px;
       }
       &_position {
         font-size: 14px;
@@ -56,7 +56,7 @@
       justify-content: space-between;
       padding: 4px 8px;
       border-radius: 4px;
-      margin-bottom: 16px;
+      margin-block-end: 16px;
 
       &_left {
         display: flex;
@@ -110,7 +110,7 @@
         }
 
         &:not(:last-child) {
-          margin-bottom: 8px;
+          margin-block-end: 8px;
         }
       }
     }
